@@ -12,8 +12,8 @@
    4. Copie a "Project URL" e a "anon public key"
    5. Cole abaixo nos campos correspondentes
 ───────────────────────────────────────────────────────────────────── */
-const SUPABASE_URL  = 'COLE_SUA_URL_AQUI';       // ex: https://xyzxyz.supabase.co
-const SUPABASE_KEY  = 'COLE_SUA_CHAVE_AQUI';     // chave "anon public"
+const SUPABASE_URL = 'https://iovuyuuuncoymubvgufj.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_8aWULP_5SMSuWC4dgSgJuQ_7iGbwEQt';
 
 /* ─────────────────────────────────────────────────────────────────────
    ✏️  FOTOS DA GALERIA
