@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rico Passeios — Buggy em Porto de Galinhas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="#" class="nav-brand">Rico <span>Passeios</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#contato" class="nav-cta">Entre em contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-sun"></div>
+    <div class="hero-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <svg class="hero-dunes" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 Q180,20 360,60 Q540,100 720,40 Q900,0 1080,55 Q1260,110 1440,50 L1440,120 L0,120 Z" fill="#f5c542" opacity="0.18"/>
+      <path d="M0,95 Q240,55 480,80 Q720,105 960,65 Q1200,25 1440,80 L1440,120 L0,120 Z" fill="#e8930a" opacity="0.12"/>
+    </svg>
+
+    <p class="hero-tag animate-fade-up" style="animation-delay:.1s">✦ Passeios de Buggy em Porto de Galinhas ✦</p>
+    <h1 class="animate-fade-up" style="animation-delay:.25s">Rico<br><span>Passeios</span></h1>
+    <p class="hero-sub animate-fade-up" style="animation-delay:.4s">Praias, fotos e emoção — Litoral Sul de Pernambuco</p>
+
+    <div class="hero-badges animate-fade-up" style="animation-delay:.55s">
+      <span class="badge">⭐ 5 estrelas</span>
+      <span class="badge">👥 +500 passeios</span>
+      <span class="badge">📸 Fotos exclusivas</span>
+    </div>
+
+    <div class="hero-btns animate-fade-up" style="animation-delay:.7s">
+      <a href="https://wa.me/5581988379287?text=Olá%20Ricardo!%20Gostaria%20de%20agendar%20um%20passeio." class="btn-primary" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.534 5.857L.057 23.5l5.797-1.519A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.516-5.176-1.416l-.371-.22-3.44.902.917-3.35-.242-.386A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Falar no WhatsApp
+      </a>
+      <a href="https://www.instagram.com/ricopasseios_pg" class="btn-instagram" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @ricopasseios_pg
+      </a>
+      <a href="#sobre" class="btn-outline">Conhecer mais ↓</a>
+    </div>
+  </header>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="section reveal">
+    <p class="section-tag">✦ quem sou eu</p>
+    <h2 class="section-title">Sobre Rico</h2>
+    <p class="section-desc">Nativo de Porto de Galinhas e um dos bugueiros mais renomado da região!</p>
+    <p class="sobre-text">É muito mais que só um passeio — você viverá uma aventura inesquecível com total segurança e muita diversão para toda sua família.</p>
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Anos de experiência</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Passeios realizados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-nota">—</div>
+        <div class="stat-label">Nota média</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <div class="gallery-section reveal" id="galeria">
+    <div class="section-inner">
+      <p class="section-tag">✦ os cenários</p>
+      <h2 class="section-title">Cada praia, uma paisagem e fotos únicas</h2>
+      <p class="section-desc">Paisagens que só Porto de Galinhas tem</p>
+
+      <!-- Grade principal: 5 fotos em destaque -->
+      <div class="gallery" id="galleryGrid"></div>
+
+      <!-- Botão ver todas -->
+      <div class="gallery-more-wrap" id="galleryMoreWrap" style="display:none">
+        <button class="gallery-more-btn" id="galleryMoreBtn">
+          <span class="gallery-more-icon">🖼️</span>
+          Ver todas as fotos
+          <span class="gallery-more-count" id="galleryMoreCount"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL GALERIA COMPLETA ===== -->
+  <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Galeria completa">
+    <div class="gallery-modal-backdrop" id="galleryModalBackdrop"></div>
+    <div class="gallery-modal-content">
+      <div class="gallery-modal-header">
+        <div>
+          <h3 class="gallery-modal-title">📸 Galeria completa</h3>
+          <p class="gallery-modal-sub" id="galleryModalSub"></p>
+        </div>
+        <button class="gallery-modal-close" id="galleryModalClose" aria-label="Fechar">✕</button>
+      </div>
+      <div class="gallery-modal-grid" id="galleryModalGrid"></div>
+    </div>
+  </div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima">›</button>
+    <div class="lightbox-inner">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      <div class="lightbox-caption">
+        <span id="lightboxLabel"></span>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AVALIAÇÕES ===== -->
+  <div class="reviews-section reveal" id="avaliacoes">
+    <div class="section-inner">
+      <div class="reviews-header">
+        <div>
+          <p class="section-tag">✦ quem já foi</p>
+          <h2 class="section-title">O que dizem os passageiros</h2>
+        </div>
+        <div class="overall-rating">
+          <span>⭐</span>
+          <strong id="overallScore">—</strong>
+          <span id="overallCount">Sem avaliações ainda</span>
+        </div>
+      </div>
+
+      <div class="reviews" id="reviewsList"></div>
+
+      <div class="review-form-wrap">
+        <h3 class="form-title">Deixe sua avaliação</h3>
+        <p class="form-subtitle">Conte como foi sua experiência!</p>
+        <form id="reviewForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inputName">Seu nome</label>
+              <input type="text" id="inputName" placeholder="Ex: João Silva" maxlength="60" required />
+            </div>
+            <div class="form-group">
+              <label for="inputDate">Quando foi o passeio?</label>
+              <input type="month" id="inputDate" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Sua nota</label>
+            <div class="star-picker" id="starPicker">
+              <button type="button" class="star-btn" data-value="1">★</button>
+              <button type="button" class="star-btn" data-value="2">★</button>
+              <button type="button" class="star-btn" data-value="3">★</button>
+              <button type="button" class="star-btn" data-value="4">★</button>
+              <button type="button" class="star-btn" data-value="5">★</button>
+            </div>
+            <input type="hidden" id="inputRating" value="0" />
+          </div>
+          <div class="form-group">
+            <label for="inputText">Sua experiência</label>
+            <textarea id="inputText" rows="4" placeholder="Conte como foi o passeio, o que mais gostou..." maxlength="500" required></textarea>
+            <span class="char-count"><span id="charCount">0</span>/1000</span>
+          </div>
+          <button type="submit" class="btn-primary btn-submit">Enviar avaliação ✦</button>
+          <p class="form-error" id="formError"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="section reveal">
+    <p class="section-tag">✦ fale comigo!</p>
+    <h2 class="section-title">Entre em Contato</h2>
+    <p class="section-desc">Agende seu passeio agora mesmo</p>
+    <div class="contact-grid">
+      
+      <a href="https://wa.me/5581988379287?text=Olá%20Rico!%20Gostaria%20de%20agendar%20um%20passeio%20de%20buggy." class="contact-item contact-item--link" target="_blank">
+        <div class="contact-icon ci-wpp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#0f6e56"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.534 5.857L.057 23.5l5.797-1.519A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.516-5.176-1.416l-.371-.22-3.44.902.917-3.35-.242-.386A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        </div>
+        <div>
+          <p class="contact-label">WhatsApp</p>
+          <p class="contact-value">(81) 9 8837-9287</p>
+        </div>
+      </a>
+      
+      <a href="https://www.instagram.com/ricopasseios_pg" class="contact-item contact-item--link" target="_blank">
+        <div class="contact-icon ci-insta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#993556"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div>
+          <p class="contact-label">Instagram</p>
+          <p class="contact-value">@ricopasseios_pg</p>
+        </div>
+      </a>
+      
+      <div class="contact-item">
+        <div class="contact-icon ci-loc">📍</div>
+        <div>
+          <p class="contact-label">Localização</p>
+          <p class="contact-value">Porto de Galinhas, PE</p>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon ci-clock">🕐</div>
+        <div>
+          <p class="contact-label">Horários</p>
+          <p class="contact-value">Todos os dias, 7h–18h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <div class="cta-section">
+    <h2>Pronto para a <span>aventura?</span></h2>
+    <p>Vagas limitadas — reserve seu passeio com antecedência!</p>
+    <a href="https://wa.me/5581988379287?text=Olá%20Ricardo!%20Gostaria%20de%20agendar%20um%20passeio." class="btn-primary" target="_blank">
+      💬 Agendar pelo WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    <span class="footer-brand">Rico <span>Passeios</span></span>
+    <span class="footer-copy">Porto de Galinhas, PE 🌊 · Todos os direitos reservados</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
