@@ -3,15 +3,6 @@
    Avaliações salvas no Supabase (banco de dados na nuvem)
 ============================================= */
 
-/* ─────────────────────────────────────────────────────────────────────
-   ✏️  CONFIGURAÇÃO DO SUPABASE
-   
-   1. Crie sua conta gratuita em https://supabase.com
-   2. Crie um novo projeto
-   3. Vá em Project Settings → API
-   4. Copie a "Project URL" e a "anon public key"
-   5. Cole abaixo nos campos correspondentes
-───────────────────────────────────────────────────────────────────── */
 const SUPABASE_URL = 'https://iovuyuuuncoymubvgufj.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_8aWULP_5SMSuWC4dgSgJuQ_7iGbwEQt';
 
