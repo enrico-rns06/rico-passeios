@@ -155,8 +155,28 @@
               <input type="text" id="inputName" placeholder="Ex: João Silva" maxlength="60" required />
             </div>
             <div class="form-group">
-              <label for="inputDate">Quando foi o passeio?</label>
-              <input type="month" id="inputDate" required />
+              <label>Quando foi o passeio?</label>
+              <div class="date-selects">
+                <select id="inputMonth" class="date-select">
+                  <option value="">Mês</option>
+                  <option value="01">Janeiro</option>
+                  <option value="02">Fevereiro</option>
+                  <option value="03">Março</option>
+                  <option value="04">Abril</option>
+                  <option value="05">Maio</option>
+                  <option value="06">Junho</option>
+                  <option value="07">Julho</option>
+                  <option value="08">Agosto</option>
+                  <option value="09">Setembro</option>
+                  <option value="10">Outubro</option>
+                  <option value="11">Novembro</option>
+                  <option value="12">Dezembro</option>
+                </select>
+                <select id="inputYear" class="date-select">
+                  <option value="">Ano</option>
+                </select>
+              </div>
+              <input type="hidden" id="inputDate" />
             </div>
           </div>
           <div class="form-group">

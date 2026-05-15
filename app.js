@@ -3,8 +3,17 @@
    Avaliações salvas no Supabase (banco de dados na nuvem)
 ============================================= */
 
-const SUPABASE_URL = 'https://iovuyuuuncoymubvgufj.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_8aWULP_5SMSuWC4dgSgJuQ_7iGbwEQt';
+/* ─────────────────────────────────────────────────────────────────────
+   ✏️  CONFIGURAÇÃO DO SUPABASE
+   
+   1. Crie sua conta gratuita em https://supabase.com
+   2. Crie um novo projeto
+   3. Vá em Project Settings → API
+   4. Copie a "Project URL" e a "anon public key"
+   5. Cole abaixo nos campos correspondentes
+───────────────────────────────────────────────────────────────────── */
+const SUPABASE_URL  = 'COLE_SUA_URL_AQUI';       // ex: https://xyzxyz.supabase.co
+const SUPABASE_KEY  = 'COLE_SUA_CHAVE_AQUI';     // chave "anon public"
 
 /* ─────────────────────────────────────────────────────────────────────
    ✏️  FOTOS DA GALERIA
@@ -61,9 +70,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupGalleryModal();
   setupLightbox();
 
+  // Preenche o select de anos dinamicamente (últimos 5 anos até o atual)
   const today = new Date();
-  const maxMonth = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}`;
-  document.getElementById('inputDate').setAttribute('max', maxMonth);
+  const currentYear = today.getFullYear();
+  const yearSelect = document.getElementById('inputYear');
+  for (let y = currentYear; y >= currentYear - 5; y--) {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    yearSelect.appendChild(opt);
+  }
+
+  // Atualiza o campo hidden sempre que mês ou ano mudar
+  function syncDate() {
+    const m = document.getElementById('inputMonth').value;
+    const y = document.getElementById('inputYear').value;
+    document.getElementById('inputDate').value = (m && y) ? `${y}-${m}` : '';
+  }
+  document.getElementById('inputMonth').addEventListener('change', syncDate);
+  document.getElementById('inputYear').addEventListener('change', syncDate);
 
   await loadReviews();
   renderReviews();
@@ -412,7 +437,14 @@ async function handleSubmit(e) {
   const text = textEl.value.trim();
 
   if (!name)           { nameEl.classList.add('error'); errorEl.textContent = 'Por favor, informe seu nome.'; nameEl.focus(); return; }
-  if (!date)           { dateEl.classList.add('error'); errorEl.textContent = 'Por favor, informe quando foi o passeio.'; dateEl.focus(); return; }
+  if (!date) {
+    document.getElementById('inputMonth').classList.add('error');
+    document.getElementById('inputYear').classList.add('error');
+    errorEl.textContent = 'Por favor, informe quando foi o passeio.';
+    return;
+  }
+  document.getElementById('inputMonth').classList.remove('error');
+  document.getElementById('inputYear').classList.remove('error');
   if (!selectedRating) { errorEl.textContent = 'Por favor, selecione uma nota de 1 a 5 estrelas.'; return; }
   if (text.length < 10){ textEl.classList.add('error'); errorEl.textContent = 'Conte um pouquinho mais (mín. 10 caracteres).'; textEl.focus(); return; }
   if (!consentEl.checked) { errorEl.textContent = 'Você precisa concordar com o uso dos dados para enviar.'; consentEl.focus(); return; }
@@ -437,6 +469,9 @@ async function handleSubmit(e) {
   updateOverallStats();
 
   document.getElementById('reviewForm').reset();
+  document.getElementById('inputMonth').value = '';
+  document.getElementById('inputYear').value = '';
+  document.getElementById('inputDate').value = '';
   consentEl.checked  = false;
   selectedRating     = 0;
   highlightStars(0);
