@@ -19,22 +19,22 @@ const SUPABASE_KEY = 'sb_publishable_8aWULP_5SMSuWC4dgSgJuQ_7iGbwEQt';
    ✏️  FOTOS DA GALERIA
 ───────────────────────────────────────────────────────────────────── */
 const GALLERY_PHOTOS = [
-  { src: 'fotos/alianca.jpeg',   label: '',  featured: true  },
-  { src: 'fotos/balanco.jpeg',   label: '',  featured: true  },
-  { src: 'fotos/amigas.jpeg',    label: '',  featured: true  },
-  { src: 'fotos/maraca.jpeg',    label: '',  featured: true  },
-  { src: 'fotos/amigos.jpeg',    label: '',  featured: true  },
-  { src: 'fotos/irmas.jpeg',     label: '',  featured: false },
-  { src: 'fotos/empe1.jpeg',     label: '',  featured: false },
-  { src: 'fotos/deitada1.jpeg',  label: '',  featured: false },
-  { src: 'fotos/deitada2.jpeg',  label: '',  featured: false },
-  { src: 'fotos/deitada3.jpeg',  label: '',  featured: false },
-  { src: 'fotos/crianca1.jpeg',  label: '',  featured: false },
-  { src: 'fotos/homem.jpeg',     label: '',  featured: false },
-  { src: 'fotos/crianca3.jpeg',  label: '',  featured: false },
-  { src: 'fotos/familia.jpeg',   label: '',  featured: false },
-  { src: 'fotos/familia1.jpeg',  label: '',  featured: false },
-  { src: 'fotos/balanco1.jpeg',  label: '',  featured: false },
+  { src: 'fotos/ricoecasal.jpeg',   label: '',  featured: true  },
+  { src: 'fotos/casaisbuggy.jpeg',   label: '',  featured: true  },
+  { src: 'fotos/casalbalanco.jpeg',    label: '',  featured: true  },
+  { src: 'fotos/emcimapordosol.jpeg',    label: '',  featured: true  },
+  { src: 'fotos/homembuggy.jpeg',    label: '',  featured: true  },
+  { src: 'fotos/agua.jpeg',     label: '',  featured: false },
+  { src: 'fotos/pendurado.jpeg',     label: '',  featured: false },
+  { src: 'fotos/casalbuggyjangada.jpeg',  label: '',  featured: false },
+  { src: 'fotos/mulheremcima.jpeg',  label: '',  featured: false },
+  { src: 'fotos/balancolaranja.jpeg',  label: '',  featured: false },
+  { src: 'fotos/familiabuggy.jpeg',  label: '',  featured: false },
+  { src: 'fotos/emcima.jpeg',     label: '',  featured: false },
+  { src: 'fotos/botao.jpeg',  label: '',  featured: false },
+  { src: 'fotos/amigos.jpeg',   label: '',  featured: false },
+  { src: 'fotos/flor.jpeg',  label: '',  featured: false },
+  { src: 'fotos/flor2.jpeg',  label: '',  featured: false },
 ];
 
 /* ─────────────────────────────────────────────────────────────────── */
